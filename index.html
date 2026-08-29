@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Sister, Aarohi 💛</title>
+  <meta name="description"
+    content="A Raksha Bandhan gift from Tanush to Aarohi — a heartfelt celebration of siblinghood across screens.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Floating Petals Canvas -->
+  <canvas id="petals-canvas"></canvas>
+
+  <!-- Gradient Overlay that shifts on scroll -->
+  <div id="gradient-overlay"></div>
+
+  <!-- Floating action button -->
+  <button id="fab" aria-label="Celebrate">🪢</button>
+
+  <!-- ===== SECTION 1: HERO ===== -->
+  <section id="hero" class="section">
+    <div class="hero-content">
+      <svg id="rakhi-svg" viewBox="0 0 300 300" width="220" height="220" aria-label="Animated rakhi illustration">
+        <!-- Outer decorative circle -->
+        <circle cx="150" cy="150" r="90" fill="none" stroke="url(#goldGrad)" stroke-width="3" class="rakhi-outer" />
+        <!-- Inner mandala petals -->
+        <g class="rakhi-petals" transform="translate(150,150)">
+          <ellipse rx="30" ry="12" fill="url(#petalGrad)" class="petal" style="--i:0" />
+          <ellipse rx="30" ry="12" fill="url(#petalGrad)" class="petal" style="--i:1" />
+          <ellipse rx="30" ry="12" fill="url(#petalGrad)" class="petal" style="--i:2" />
+          <ellipse rx="30" ry="12" fill="url(#petalGrad)" class="petal" style="--i:3" />
+          <ellipse rx="30" ry="12" fill="url(#petalGrad)" class="petal" style="--i:4" />
+          <ellipse rx="30" ry="12" fill="url(#petalGrad)" class="petal" style="--i:5" />
+          <ellipse rx="30" ry="12" fill="url(#petalGrad)" class="petal" style="--i:6" />
+          <ellipse rx="30" ry="12" fill="url(#petalGrad)" class="petal" style="--i:7" />
+        </g>
+        <!-- Center jewel -->
+        <circle cx="150" cy="150" r="16" fill="url(#jewelGrad)" class="rakhi-center" />
+        <circle cx="150" cy="150" r="8" fill="#fff8e7" opacity="0.7" class="rakhi-center-glow" />
+        <!-- Thread lines -->
+        <line x1="0" y1="150" x2="60" y2="150" stroke="url(#threadGrad)" stroke-width="4" stroke-linecap="round"
+          class="thread thread-left" />
+        <line x1="240" y1="150" x2="300" y2="150" stroke="url(#threadGrad)" stroke-width="4" stroke-linecap="round"
+          class="thread thread-right" />
+        <!-- Bow on the right -->
+        <path d="M240,150 Q260,130 270,145 Q275,155 255,150" fill="none" stroke="#d4a04a" stroke-width="2.5"
+          class="bow bow1" />
+        <path d="M240,150 Q260,170 270,155 Q275,145 255,150" fill="none" stroke="#d4a04a" stroke-width="2.5"
+          class="bow bow2" />
+        <!-- Defs -->
+        <defs>
+          <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#d4a04a" />
+            <stop offset="50%" stop-color="#f5d98e" />
+            <stop offset="100%" stop-color="#d4a04a" />
+          </linearGradient>
+          <linearGradient id="threadGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#c0392b" stop-opacity="0" />
+            <stop offset="40%" stop-color="#c0392b" />
+            <stop offset="100%" stop-color="#e74c3c" />
+          </linearGradient>
+          <radialGradient id="petalGrad">
+            <stop offset="0%" stop-color="#f5d98e" />
+            <stop offset="100%" stop-color="#d4a04a" />
+          </radialGradient>
+          <radialGradient id="jewelGrad">
+            <stop offset="0%" stop-color="#e74c3c" />
+            <stop offset="60%" stop-color="#922b21" />
+            <stop offset="100%" stop-color="#641e16" />
+          </radialGradient>
+        </defs>
+      </svg>
+
+      <h1 class="hero-title reveal">For My Sister, Aarohi 💛</h1>
+      <p class="hero-sub reveal">A little late, but made with all my heart.</p>
+
+      <div class="scroll-indicator reveal">
+        <span>Scroll down</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: THE APOLOGY ===== -->
+  <section id="apology" class="section">
+    <div class="section-inner">
+      <h2 class="section-title reveal">I'm Sorry I Missed Rakhi</h2>
+      <div class="divider reveal"></div>
+      <p class="section-body reveal">
+        Distance and screens can't always keep up with timing, but they've never once stopped what I feel.
+        I gift you yesterday, so I built you this instead — something that stays,
+        unlike a day on a calendar.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: WHY SHE'S MY SISTER ===== -->
+  <section id="why" class="section">
+    <div class="section-inner">
+      <h2 class="section-title reveal">You Never Felt Like 'Just Online'</h2>
+      <div class="divider reveal"></div>
+      <p class="section-body reveal">
+        Somewhere between the calls and the conversations, 'friend' stopped being the right word.
+        You became someone I check on, someone I'm proud of, someone I'd protect even through a screen.
+        That's not something distance can fake — that's family.
+      </p>
+
+      <div class="cards-grid">
+        <div class="trait-card reveal" style="--delay: 0.1s">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+          </div>
+          <h3>Sweet</h3>
+          <p>You have this rare warmth that makes everyone around you feel like they matter — effortlessly.</p>
+        </div>
+
+        <div class="trait-card reveal" style="--delay: 0.25s">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <h3>Fiercely Herself</h3>
+          <p>You don't bend to fit anyone's mold — you shine in your own shape, and that takes real courage.</p>
+        </div>
+
+        <div class="trait-card reveal" style="--delay: 0.4s">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3>Endlessly Kind</h3>
+          <p>Your kindness isn't loud — it's steady, patient, and the kind of gentle that quietly changes people.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: THE PROMISE ===== -->
+  <section id="promise" class="section">
+    <div class="section-inner">
+      <h2 class="section-title reveal">No Thread, But Still a Promise</h2>
+      <div class="divider reveal"></div>
+      <p class="section-body reveal">
+        A rakhi is just string and color until a promise gives it meaning. So here's mine:
+        I'll always be in your corner, I'll always pick up, and I'll always treat you like the little sister
+        I never had but somehow found — a thousand kilometers away, on a screen, completely by chance,
+        entirely on purpose.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5: CLOSING ===== -->
+  <section id="closing" class="section">
+    <div class="section-inner closing-inner">
+      <h2 class="section-title reveal">Happy (Late) Raksha Bandhan, Aarohi</h2>
+      <div class="divider reveal"></div>
+      <p class="section-body reveal">
+        This website is my gift to you. No thread required — just know I'm always tied to your side.
+      </p>
+      <p class="signature reveal">— Tanush</p>
+
+      <!-- Closing heart/bow animation -->
+      <div class="closing-art reveal">
+        <svg viewBox="0 0 120 100" width="100" height="84" class="closing-heart">
+          <path d="M60 90 C60 90 10 55 10 30 A25 25 0 0 1 60 20 A25 25 0 0 1 110 30 C110 55 60 90 60 90Z"
+            fill="url(#heartGrad)" class="heart-path" />
+          <path d="M40,42 Q50,30 60,42 Q70,30 80,42" fill="none" stroke="#f5d98e" stroke-width="2" class="heart-bow"
+            stroke-linecap="round" />
+          <defs>
+            <radialGradient id="heartGrad" cx="50%" cy="40%" r="60%">
+              <stop offset="0%" stop-color="#e74c3c" />
+              <stop offset="100%" stop-color="#922b21" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with love, code & a little guilt for being late 💛</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
